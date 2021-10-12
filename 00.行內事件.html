@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- this 裡面的文字要加引號 -->
+<input type="button" value="點我" onclick="this.value = 'asdf'">
+<!-- onclick 點一下時 -->
+<input type="button" value="點我" onclick="alert('點按鈕')">
+<!-- function : onclick 呼叫 function.this 代表元素 -->
+<input type="button" value="點我" onclick="clickbtn(this)">
+
+<body>
+
+    <script>
+        const clickbtn = (element) => {
+            alert(element.value)
+        }
+    </script>
+</body>
+
+</html>
